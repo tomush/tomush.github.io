@@ -146,6 +146,95 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-MySql常用语句记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/04/MySql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5%E8%AE%B0%E5%BD%95/">MySql常用语句记录</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/04/MySql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5%E8%AE%B0%E5%BD%95/" class="archive-article-date">
+  	<time datetime="2020-04-03T20:45:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>本来第一篇博客想分享下Java开发中踩过的坑--for循环中进行元素增删操作的问题。由于初试hexo+github pages，对hexo的主题配置之类的玩上瘾了，导致时间有点晚，因为这次只记录一些常用的mysql语句，</code></pre><p>大家看看就好，希望能对你们有所帮助。<br>    1)MySql的内外连接语句<br>    内连接: inner join on<br>    语句：select * from a_table a inner join b_table b on a.a_id = b.b_id<br>    特点：查找左右两表的交集部分</p>
+<pre><code>左连接：left join on
+语句：select * from a_table a left join b_table b on a.a_id = b.b_id;
+特点：查找左表的记录，右表记录不一定存在，如果没找到符合条件的右表数据则显示null
+
+右连接：right join on
+语句：select * from a_table a right join b_table b on a.a_id = b.b_id;
+特点：查找右表的记录，左表记录不一定存在，如果没找到符合条件的左表数据则显示null
+
+2)排序语句
+正序 order by /order by asc
+倒序 order by desc
+
+3)分组语句
+group by,一般配合聚合函数使用，如计数（COUNT），求和（SUM），求平均数（AVG）
+
+4)拼接语句
+a.concat()函数
+语法：concat(str1, str2,...)
+用途：将多个字符串连接成一个字符串，如果有任何一个参数为null，则返回值为null。
+
+b.concat_ws()函数
+语法：concat_ws(separator, str1, str2, ...)
+用途：和concat()一样，将多个字符串连接成一个字符串，但是可以指定分隔符。如果分隔符(separator)为 NULL，则结果为 NULL。函数会忽略任何分隔符参数后的 NULL 值。
+
+c.group_concat()函数
+语法：group_concat( [distinct] 要连接的字段 [order by 排序字段 asc/desc ] [separator &apos;分隔符&apos;] )
+用途：这个函数很好用，可以将group by产生的同一个分组中的值连接起来，返回一个字符串结果。如果使用distinct则会排除重复值；如果希望对结果中的值进行排序，可以使用order by子句；separator是一个字符串值，默认为逗号。</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/04/MySql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5%E8%AE%B0%E5%BD%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
