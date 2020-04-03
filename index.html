@@ -166,28 +166,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>本来第一篇博客想分享下Java开发中踩过的坑--for循环中进行元素增删操作的问题。由于初试hexo+github pages，对hexo的主题配置之类的玩上瘾了，导致时间有点晚，因为这次只记录一些常用的mysql语句，</code></pre><p>大家看看就好，希望能对你们有所帮助。<br>    1)MySql的内外连接语句<br>    内连接: inner join on<br>    语句：select * from a_table a inner join b_table b on a.a_id = b.b_id<br>    特点：查找左右两表的交集部分</p>
+        <pre><code>本来第一篇博客想分享下Java开发中踩过的坑--for循环中进行元素增删操作的问题。由于初试hexo+github pages，对hexo的主题配置之类的玩上瘾了，导致时间有点晚，因为这次只记录一些常用的mysql语句，大家看看就好，希望能对你们有所帮助。</code></pre><p>1)MySql的内外连接语句<br>    内连接: inner join on<br>    语句：select * from a_table a inner join b_table b on a.a_id = b.b_id<br>    特点：查找左右两表的交集部分</p>
 <pre><code>左连接：left join on
 语句：select * from a_table a left join b_table b on a.a_id = b.b_id;
 特点：查找左表的记录，右表记录不一定存在，如果没找到符合条件的右表数据则显示null
 
 右连接：right join on
 语句：select * from a_table a right join b_table b on a.a_id = b.b_id;
-特点：查找右表的记录，左表记录不一定存在，如果没找到符合条件的左表数据则显示null
-
-2)排序语句
-正序 order by /order by asc
-倒序 order by desc
-
-3)分组语句
-group by,一般配合聚合函数使用，如计数（COUNT），求和（SUM），求平均数（AVG）
-
-4)拼接语句
-a.concat()函数
-语法：concat(str1, str2,...)
-用途：将多个字符串连接成一个字符串，如果有任何一个参数为null，则返回值为null。
-
-b.concat_ws()函数
+特点：查找右表的记录，左表记录不一定存在，如果没找到符合条件的左表数据则显示null</code></pre><p>2)排序语句<br>    正序 order by /order by asc<br>    倒序 order by desc</p>
+<p>3)分组语句<br>    group by,一般配合聚合函数使用，如计数（COUNT），求和（SUM），求平均数（AVG）</p>
+<p>4)拼接语句<br>    a.concat()函数<br>    语法：concat(str1, str2,…)<br>    用途：将多个字符串连接成一个字符串，如果有任何一个参数为null，则返回值为null。</p>
+<pre><code>b.concat_ws()函数
 语法：concat_ws(separator, str1, str2, ...)
 用途：和concat()一样，将多个字符串连接成一个字符串，但是可以指定分隔符。如果分隔符(separator)为 NULL，则结果为 NULL。函数会忽略任何分隔符参数后的 NULL 值。
 
