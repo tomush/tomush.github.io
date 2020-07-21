@@ -16,7 +16,7 @@
 <meta property="og:description" content="最近在牛客网上刷到一道有关快速幂的算法题，题目如下：  给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。 保证base和exponent不同时为0  在解答这道算法题前，需要先了解下快速幂是什么。 什么是快速幂 回到题目，要求一个数的n次方，有的同学可能就要问了，这不是一个for循环就搞定的事吗？ public double Power">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-21T13:10:48.000Z">
-<meta property="article:modified_time" content="2020-07-21T16:19:37.595Z">
+<meta property="article:modified_time" content="2020-07-21T16:20:55.083Z">
 <meta property="article:author" content="Hong YueTang">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -189,7 +189,7 @@
 <p>        我们知道，传统的求幂算法之所以时间复杂度比较高，是因为当指数很大时，需要执行的循环次数则会变得很多。那么只要把指数缩小，相应的循环次数也会降低，这就是快速幂的目的。所谓快速幂，就是在求幂的每一步都把指数缩小一半，底数则相应做一次平方运算，通过降低指数的值，把循环次数减少，而结果也不会变。</p>
 <p>举个例子，现在要算3的10次方，即：</p>
 <blockquote>
-<p>$3^{10} = 3×3\times3\times3\times3\times3\times3\times3\times3\times3$<br>
+<p>$3^10 = 3×3\times3\times3\times3\times3\times3\times3\times3\times3$<br>
 $3^{10} = (3\times3)\times(3\times3)\times(3\times3)\times(3\times3)\times(3\times3)$<br>
 $3^{10} = (3\times3)^5$<br>
 $3<sup>{10}=9</sup>5$<br>
