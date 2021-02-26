@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java三大特性（封装、继承、多态） | Hong YueTang`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="¶一、封装         封装就是将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。就好像一台空调，我们看不到它内部的零件信息（属性），但是可以通过遥控器（方法）来进行使用。 好处：   将变化隔离。 便于使用。 提高重用性。 提高安全性。   #####封装的实现步骤：  需要注意：操作封装的属性不一定要通过get&#x2F;set方法，其他方法也可">
+  <meta name="description" content="¶一、封装         封装就是将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。就好像一台空调，我们看不到它内部的零件信息（属性），但是可以通过遥控器（方法）来进行使用。 好处：   将变化隔离。 便于使用。 提高重用性。 提高安全性。   ¶封装的实现步骤：  需要注意：操作封装的属性不一定要通过get&#x2F;set方法，其他方法也可以对封装">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java三大特性（封装、继承、多态）">
 <meta property="og:url" content="http://yoursite.com/2021/02/26/Java%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%EF%BC%88%E5%B0%81%E8%A3%85%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E5%A4%9A%E6%80%81%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hong YueTang&#96;s Blog">
-<meta property="og:description" content="¶一、封装         封装就是将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。就好像一台空调，我们看不到它内部的零件信息（属性），但是可以通过遥控器（方法）来进行使用。 好处：   将变化隔离。 便于使用。 提高重用性。 提高安全性。   #####封装的实现步骤：  需要注意：操作封装的属性不一定要通过get&#x2F;set方法，其他方法也可">
+<meta property="og:description" content="¶一、封装         封装就是将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。就好像一台空调，我们看不到它内部的零件信息（属性），但是可以通过遥控器（方法）来进行使用。 好处：   将变化隔离。 便于使用。 提高重用性。 提高安全性。   ¶封装的实现步骤：  需要注意：操作封装的属性不一定要通过get&#x2F;set方法，其他方法也可以对封装">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223052.png">
 <meta property="og:image" content="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223400.png">
 <meta property="article:published_time" content="2021-02-26T12:00:00.000Z">
-<meta property="article:modified_time" content="2021-02-26T18:23:57.561Z">
+<meta property="article:modified_time" content="2021-02-26T18:31:44.826Z">
 <meta property="article:author" content="Hong YueTang">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -183,13 +183,13 @@
 <li>提高安全性。</li>
 </ul>
 </blockquote>
-<p>#####封装的实现步骤：<br>
-<img src="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223052.png" alt="封装的实现步骤"><br>
+<h5 id="封装的实现步骤："><a class="header-anchor" href="#封装的实现步骤：">¶</a>封装的实现步骤：</h5>
+<p><img src="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223052.png" alt="封装的实现步骤"><br>
 需要注意：操作封装的属性不一定要通过get/set方法，其他方法也可以对封装的属性进行操作。当然最好使用get/set方法，比较标准。</p>
-<p>#####访问修饰符的权限如下：<br>
-<img src="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223400.png" alt="访问修饰符的权限"><br>
+<h5 id="访问修饰符的权限如下："><a class="header-anchor" href="#访问修饰符的权限如下：">¶</a>访问修饰符的权限如下：</h5>
+<p><img src="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223400.png" alt="访问修饰符的权限"><br>
         可以看到 <strong>从上到下封装性越来越差</strong>。</p>
-<p>#####this关键字</p>
+<h5 id="this关键字"><a class="header-anchor" href="#this关键字">¶</a>this关键字</h5>
 <blockquote>
 <ol>
 <li>this关键字代表当前对象</li>
@@ -233,8 +233,8 @@
     }
 }
 </code></pre>
-<p>#####内部类<br>
-        内部类（ Inner Class ）就是定义在另外一个类里面的类。与之对应，包含内部类的类被称为外部类。<br>
+<h5 id="内部类"><a class="header-anchor" href="#内部类">¶</a>内部类</h5>
+<p>        内部类（ Inner Class ）就是定义在另外一个类里面的类。与之对应，包含内部类的类被称为外部类。<br>
 内部类的好处：</p>
 <blockquote>
 <ol>
@@ -247,8 +247,8 @@
 <h3 id="二、继承"><a class="header-anchor" href="#二、继承">¶</a>二、继承</h3>
 <p>继承关键字：<strong>extends</strong></p>
 <p>        在JAVA中， 被继承的类叫 <strong>父类</strong>(parent class)或 <strong>超类</strong>(superclass)， 继承父类的类叫 <strong>子类</strong>(subclass)或 <strong>派生类</strong>(derivedclass)。 因此，子类是父类的一个专门用途的版本， 它继承了父类中定义的所有实例变量和方法， 并且增加了独特的元素 。<br>
-        不同类型的对象，相互之间经常有一定数量的共同点。例如，狗和猫，都是动物。同时，每一个对象还定义了额外的特性使得他们与众不同。例如狗会扑咬，猫会抓老鼠。继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或新的功能，也可以用父类的功能，但不能选择性地继承父类。通过使用继承，可以快速地创建新的类，可以提高代码的重用，程序的可维护性，节省大量创建新类的时间 ，提高我们的开发效率。<br>
-#####继承的特点</p>
+        不同类型的对象，相互之间经常有一定数量的共同点。例如，狗和猫，都是动物。同时，每一个对象还定义了额外的特性使得他们与众不同。例如狗会扑咬，猫会抓老鼠。继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或新的功能，也可以用父类的功能，但不能选择性地继承父类。通过使用继承，可以快速地创建新的类，可以提高代码的重用，程序的可维护性，节省大量创建新类的时间 ，提高我们的开发效率。</p>
+<h5 id="继承的特点"><a class="header-anchor" href="#继承的特点">¶</a>继承的特点</h5>
 <blockquote>
 <ol>
 <li>子类比父类强大,即子类可以拥有自己属性和方法，对父类进行扩展。</li>
@@ -256,16 +256,16 @@
 <li>子类拥有父类对象所有的属性和方法（包括私有属性和私有方法），但是父类中的私有属性和方法子类是无法访问， <strong>只是拥有</strong>。操作父类的成员变量，只能通过父类继承过来的setter和getter方法.</li>
 </ol>
 </blockquote>
-<p>#####继承的优点：</p>
+<h5 id="继承的优点："><a class="header-anchor" href="#继承的优点：">¶</a>继承的优点：</h5>
 <blockquote>
 <ul>
 <li>减少代码量，能很好的提高复用率。</li>
 <li>使类与类之间存在继承关系，是实现多态操作的前提。</li>
 </ul>
 </blockquote>
-<p>注意：不要仅仅为了获取某个类的某个功能而去继承这个类，类与类之间要存在所属关系，不能够随意继承。<br>
-#####Super关键字：<br>
-super关键字是一个特殊的变量， 它提供了对父类的方法。 可以用super主动调用父类的构造方法、 访问父类中的成员,访问形式是：</p>
+<p>注意：不要仅仅为了获取某个类的某个功能而去继承这个类，类与类之间要存在所属关系，不能够随意继承。</p>
+<h5 id="Super关键字："><a class="header-anchor" href="#Super关键字：">¶</a>Super关键字：</h5>
+<p>super关键字是一个特殊的变量， 它提供了对父类的方法。 可以用super主动调用父类的构造方法、 访问父类中的成员,访问形式是：</p>
 <blockquote>
 <ul>
 <li>访问父类的属性:super.name</li>
@@ -294,8 +294,8 @@ public class Duck extends Animal {
 
 }
 </code></pre>
-<p>#####super的应用：<br>
-（1）执行构造方法创建对象完成对象的初始化时，先执行父类的构造，完成父类的初始化，再执行本类的初始化工作。</p>
+<h5 id="super的应用："><a class="header-anchor" href="#super的应用：">¶</a>super的应用：</h5>
+<p>（1）执行构造方法创建对象完成对象的初始化时，先执行父类的构造，完成父类的初始化，再执行本类的初始化工作。</p>
 <p>（2）第一次创建Phone（父）类，是直接继承Object,而Object是jdk提供的工具类，自然不会有属性，所以Object类只提供了无参的构造，在执行Phone方法时，无论是无参还是有参都会先执行父类Object的无参构造。</p>
 <p>（3）但是对于Phone的子类Mobile，必须也要有自己的构造方法，由于构造执行的特性，对于无参构造，先执行了Phone的无参构造，对于有参构造，则先执行父类Phone的有参，然后才执行本类属性sex的初始化。</p>
 <p>（4）构造方法constructor中,无论是否显式还是隐式调用super(),子类在创建对象调用时都会执行super();</p>
@@ -359,8 +359,8 @@ name:张三
 </code></pre>
 <h3 id="三、多态"><a class="header-anchor" href="#三、多态">¶</a>三、多态</h3>
 <p>多态指的是 <strong>对象的多种形态</strong>。具体表现为父类的引用指向子类的实例。<br>
-多态有两种：引用多态和方法多态。<strong>继承是多态的实现基础</strong>。<br>
-#####引用多态</p>
+多态有两种：引用多态和方法多态。<strong>继承是多态的实现基础</strong>。</p>
+<h5 id="引用多态"><a class="header-anchor" href="#引用多态">¶</a>引用多态</h5>
 <blockquote>
 <ul>
 <li>父类的引用可以指向本类的对象；</li>
@@ -376,9 +376,9 @@ name:张三
 <p>注意：我们不能使用一个子类的引用来指向父类的对象，如：</p>
 <pre><code>Dog animal3 = new Animal();  //这是不允许的
 </code></pre>
-<p>        这里我们必须深刻理解引用多态的意义，才能更好记忆这种多态的特性。为什么子类的引用不能用来指向父类的对象呢？我在这里通俗给大家讲解一下：就以上面的例子来说，我们能说“狗是一种动物”，但是不能说“动物是一种狗”，狗和动物是父类和子类的继承关系，它们的从属是不能颠倒的。当父类的引用指向子类的对象时，该对象将只是看成一种特殊的父类（里面有重写的方法和属性），反之，一个子类的引用来指向父类的对象是不可行的！！<br>
-#####方法多态<br>
-　根据上述创建的两个对象：本类对象和子类对象，同样都是父类的引用，当我们指向不同的对象时，它们调用的方法也是多态的。</p>
+<p>        这里我们必须深刻理解引用多态的意义，才能更好记忆这种多态的特性。为什么子类的引用不能用来指向父类的对象呢？我在这里通俗给大家讲解一下：就以上面的例子来说，我们能说“狗是一种动物”，但是不能说“动物是一种狗”，狗和动物是父类和子类的继承关系，它们的从属是不能颠倒的。当父类的引用指向子类的对象时，该对象将只是看成一种特殊的父类（里面有重写的方法和属性），反之，一个子类的引用来指向父类的对象是不可行的！！</p>
+<h5 id="方法多态"><a class="header-anchor" href="#方法多态">¶</a>方法多态</h5>
+<p>根据上述创建的两个对象：本类对象和子类对象，同样都是父类的引用，当我们指向不同的对象时，它们调用的方法也是多态的。</p>
 <blockquote>
 <ul>
 <li>创建本类对象时，调用的方法为本类方法；</li>
@@ -386,23 +386,25 @@ name:张三
 </ul>
 </blockquote>
 <p>使用多态的时候要注意：<strong>如果我们在子类中编写一个独有的方法（没有继承父类的方法），此时就不能通过父类的引用创建的子类对象来调用该方法！！！</strong></p>
-<p>#####多态的特点:</p>
+<h5 id="多态的特点"><a class="header-anchor" href="#多态的特点">¶</a>多态的特点:</h5>
 <blockquote>
 <ul>
 <li>对象类型和引用类型之间具有继承（类）/实现（接口）的关系；</li>
 <li>引用类型变量发出的方法调用的到底是哪个类中的方法，必须在程序运行期间才能确定；</li>
 <li>多态不能调用“只在子类存在但在父类不存在”的方法；</li>
-<li>如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。<br>
-#####多态存在的前提（多态的三要素）</li>
+<li>如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。</li>
 </ul>
+</blockquote>
+<h5 id="多态存在的前提（多态的三要素）"><a class="header-anchor" href="#多态存在的前提（多态的三要素）">¶</a>多态存在的前提（多态的三要素）</h5>
+<blockquote>
 <ol>
 <li>继承：必须有子类和父类，具有继承或实现</li>
 <li>重写：子类必须重写父类的方法</li>
 <li>向上转型：父类的引用变量指向子类的对象</li>
 </ol>
 </blockquote>
-<p>#####引用类型转换　<br>
-父子对象之间的转换分为了向上转型和向下转型,它们区别如下:</p>
+<h5 id="引用类型转换"><a class="header-anchor" href="#引用类型转换">¶</a>引用类型转换</h5>
+<p>父子对象之间的转换分为了向上转型和向下转型,它们区别如下:</p>
 <blockquote>
 <ul>
 <li>向上转型 : 通过子类对象(小范围)实例化父类对象(大范围),这种属于自动转换</li>
@@ -438,8 +440,8 @@ Dog dog2 = (Dog) animal;
 Cat cat = (Cat) animal;  //1.编译时 Cat类型  2.运行时 Dog类型
 </code></pre>
 <p>这是因为我们在编译的时候进行了强制类型转换，编译时的类型是我们强制转换的类型，所以编译器不会报错，而当我们运行的时候，程序给animal开辟的是Dog类型的内存空间，这与Cat类型内存空间不匹配，所以无法正常转换。这两种情况出错的本质是一样的，所以我们在使用强制类型转换的时候要特别注意这两种错误！！下面有个更安全的方式来实现向下类型转换。。。。</p>
-<p>#####instanceof运算符<br>
-         <strong>instanceof</strong> 是Java的一个二元操作符，和==，&gt;，&lt;是同一类东东。是Java的保留关键字。<strong>它的作用是测试它左边的对象是否是它右边的类的实例，返回boolean类型的数据</strong>。</p>
+<h5 id="instanceof运算符"><a class="header-anchor" href="#instanceof运算符">¶</a>instanceof运算符</h5>
+<p>         <strong>instanceof</strong> 是Java的一个二元操作符，和==，&gt;，&lt;是同一类东东。是Java的保留关键字。<strong>它的作用是测试它左边的对象是否是它右边的类的实例，返回boolean类型的数据</strong>。</p>
 <p>我们来使用instanceof运算符来规避上面的错误，代码修改如下：</p>
 <pre><code>if(animal instanceof Cat) {
     Cat cat = (Cat) animal;  
@@ -447,8 +449,8 @@ Cat cat = (Cat) animal;  //1.编译时 Cat类型  2.运行时 Dog类型
 </code></pre>
 <p>利用if语句和instanceof运算符来判断两个对象的类型是否一致。</p>
 <p>补充说明：在比较一个对象是否和另一个对象属于同一个类实例的时候，我们通常可以采用 <strong>instanceof</strong> 和 <strong>getClass</strong> 两种方法通过两者是否相等来判断，但是两者在判断上面是有差别的。Instanceof进行类型检查规则是: <strong>你属于该类吗？或者你属于该类的派生类吗？</strong> 而通过getClass获得类型信息采用==来进行检查是否相等的操作是 <strong>严格的判断,不会存在继承方面的考虑</strong>。</p>
-<p>#####重写与重载<br>
-方法的 <strong>重写</strong> (Overriding)和 <strong>重载</strong> (Overloading)是Java多态性的不同表现。<strong>重写</strong> (Overriding)是指子类重定义了父类中同名的方法。 重写表现为父子与子类之间方法的多态性。<strong>重载</strong> (Overloading)是指在同一个类中的多个方法可以同名但参数列表必须不同。 重载表现为同一个类中方法的多态性。</p>
+<h5 id="重写与重载"><a class="header-anchor" href="#重写与重载">¶</a>重写与重载</h5>
+<p>方法的 <strong>重写</strong> (Overriding)和 <strong>重载</strong> (Overloading)是Java多态性的不同表现。<strong>重写</strong> (Overriding)是指子类重定义了父类中同名的方法。 重写表现为父子与子类之间方法的多态性。<strong>重载</strong> (Overloading)是指在同一个类中的多个方法可以同名但参数列表必须不同。 重载表现为同一个类中方法的多态性。</p>
 <p>重写遵循以下规则：</p>
 <blockquote>
 <ul>
