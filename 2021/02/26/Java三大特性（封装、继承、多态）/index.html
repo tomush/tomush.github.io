@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223052.png">
 <meta property="og:image" content="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223400.png">
 <meta property="article:published_time" content="2021-02-26T12:00:00.000Z">
-<meta property="article:modified_time" content="2021-02-26T18:31:44.826Z">
+<meta property="article:modified_time" content="2021-02-26T18:37:42.140Z">
 <meta property="article:author" content="Hong YueTang">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -205,6 +205,17 @@
 <li>当getter和setter函数参数名和成员函数名重合的时候，可以使用this区别。</li>
 </ol>
 </blockquote>
+<h5 id="内部类"><a class="header-anchor" href="#内部类">¶</a>内部类</h5>
+<p>        内部类（ Inner Class ）就是定义在另外一个类里面的类。与之对应，包含内部类的类被称为外部类。<br>
+内部类的好处：</p>
+<blockquote>
+<ol>
+<li>内部类提供了更好的封装，可以把内部类隐藏在外部类之内，不允许同一个包中的其他类访问该类。</li>
+<li>内部类的方法可以直接访问外部类的所有数据，包括私有的数据。</li>
+<li>内部类所实现的功能使用外部类同样可以实现，只是有时使用内部类更方便。</li>
+</ol>
+</blockquote>
+<p><a href="http://www.cnblogs.com/hysum/p/7101974.html" target="_blank" rel="noopener">内部类具体介绍请移步这里</a></p>
 <p>实例：</p>
 <pre><code>public class Person {
 
@@ -233,17 +244,6 @@
     }
 }
 </code></pre>
-<h5 id="内部类"><a class="header-anchor" href="#内部类">¶</a>内部类</h5>
-<p>        内部类（ Inner Class ）就是定义在另外一个类里面的类。与之对应，包含内部类的类被称为外部类。<br>
-内部类的好处：</p>
-<blockquote>
-<ol>
-<li>内部类提供了更好的封装，可以把内部类隐藏在外部类之内，不允许同一个包中的其他类访问该类。</li>
-<li>内部类的方法可以直接访问外部类的所有数据，包括私有的数据。</li>
-<li>内部类所实现的功能使用外部类同样可以实现，只是有时使用内部类更方便。</li>
-</ol>
-</blockquote>
-<p><a href="http://www.cnblogs.com/hysum/p/7101974.html" target="_blank" rel="noopener">内部类具体介绍请移步这里</a></p>
 <h3 id="二、继承"><a class="header-anchor" href="#二、继承">¶</a>二、继承</h3>
 <p>继承关键字：<strong>extends</strong></p>
 <p>        在JAVA中， 被继承的类叫 <strong>父类</strong>(parent class)或 <strong>超类</strong>(superclass)， 继承父类的类叫 <strong>子类</strong>(subclass)或 <strong>派生类</strong>(derivedclass)。 因此，子类是父类的一个专门用途的版本， 它继承了父类中定义的所有实例变量和方法， 并且增加了独特的元素 。<br>
