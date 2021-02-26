@@ -6,15 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/8 | Hong YueTang`s Blog</title>
+  <title>Java三大特性（封装、继承、多态） | Hong YueTang`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hong YueTang&#96;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/08/index.html">
+  <meta name="description" content="¶一、封装         封装就是将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。就好像一台空调，我们看不到它内部的零件信息（属性），但是可以通过遥控器（方法）来进行使用。 好处：   将变化隔离。 便于使用。 提高重用性。 提高安全性。   #####封装的实现步骤：  需要注意：操作封装的属性不一定要通过get&#x2F;set方法，其他方法也可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java三大特性（封装、继承、多态）">
+<meta property="og:url" content="http://yoursite.com/2021/02/26/Java%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%EF%BC%88%E5%B0%81%E8%A3%85%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E5%A4%9A%E6%80%81%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hong YueTang&#96;s Blog">
+<meta property="og:description" content="¶一、封装         封装就是将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。就好像一台空调，我们看不到它内部的零件信息（属性），但是可以通过遥控器（方法）来进行使用。 好处：   将变化隔离。 便于使用。 提高重用性。 提高安全性。   #####封装的实现步骤：  需要注意：操作封装的属性不一定要通过get&#x2F;set方法，其他方法也可">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223052.png">
+<meta property="og:image" content="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223400.png">
+<meta property="article:published_time" content="2021-02-26T12:00:00.000Z">
+<meta property="article:modified_time" content="2021-02-26T18:23:57.561Z">
 <meta property="article:author" content="Hong YueTang">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223052.png">
   
     <link rel="alternative" href="/atom.xml" title="Hong YueTang`s Blog" type="application/atom+xml">
   
@@ -144,71 +152,451 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Java三大特性（封装、继承、多态）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/05/%E5%8D%81%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="archive-article-date">
-  	<time datetime="2020-08-05T11:12:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-05</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/05/%E5%8D%81%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">十大排序算法学习记录</a>
+    <h1 class="article-title" itemprop="name">
+      Java三大特性（封装、继承、多态）
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/02/26/Java%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%EF%BC%88%E5%B0%81%E8%A3%85%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E5%A4%9A%E6%80%81%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2021-02-26T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一、封装"><a class="header-anchor" href="#一、封装">¶</a>一、封装</h3>
+<p>        封装就是将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。就好像一台空调，我们看不到它内部的零件信息（属性），但是可以通过遥控器（方法）来进行使用。<br>
+好处：</p>
+<blockquote>
+<ul>
+<li>将变化隔离。</li>
+<li>便于使用。</li>
+<li>提高重用性。</li>
+<li>提高安全性。</li>
+</ul>
+</blockquote>
+<p>#####封装的实现步骤：<br>
+<img src="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223052.png" alt="封装的实现步骤"><br>
+需要注意：操作封装的属性不一定要通过get/set方法，其他方法也可以对封装的属性进行操作。当然最好使用get/set方法，比较标准。</p>
+<p>#####访问修饰符的权限如下：<br>
+<img src="https://tomush-blog.oss-cn-shenzhen.aliyuncs.com/tomush-blog/imgs/20210226223400.png" alt="访问修饰符的权限"><br>
+        可以看到 <strong>从上到下封装性越来越差</strong>。</p>
+<p>#####this关键字</p>
+<blockquote>
+<ol>
+<li>this关键字代表当前对象</li>
+</ol>
+<blockquote>
+<ul>
+<li>this.属性 操作当前对象的属性</li>
+<li>this.方法 调用当前对象的方法。</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>封装对象的属性的时候，经常会使用this关键字。</li>
+<li>当getter和setter函数参数名和成员函数名重合的时候，可以使用this区别。</li>
+</ol>
+</blockquote>
+<p>实例：</p>
+<pre><code>public class Person {
+
+    /**
+    * 封装Person类的属性
+    * 使用private修饰符，保证其他类不能直接修改该属性
+    */
+    private String name;  //姓名
+    
+    private int age;      //年龄
+    
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;   //this关键字调用的是本类定义的成员属性
+    }
+    
+    public int getAge() {
+        return age;
+    }
+    
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+</code></pre>
+<p>#####内部类<br>
+        内部类（ Inner Class ）就是定义在另外一个类里面的类。与之对应，包含内部类的类被称为外部类。<br>
+内部类的好处：</p>
+<blockquote>
+<ol>
+<li>内部类提供了更好的封装，可以把内部类隐藏在外部类之内，不允许同一个包中的其他类访问该类。</li>
+<li>内部类的方法可以直接访问外部类的所有数据，包括私有的数据。</li>
+<li>内部类所实现的功能使用外部类同样可以实现，只是有时使用内部类更方便。</li>
+</ol>
+</blockquote>
+<p><a href="http://www.cnblogs.com/hysum/p/7101974.html" target="_blank" rel="noopener">内部类具体介绍请移步这里</a></p>
+<h3 id="二、继承"><a class="header-anchor" href="#二、继承">¶</a>二、继承</h3>
+<p>继承关键字：<strong>extends</strong></p>
+<p>        在JAVA中， 被继承的类叫 <strong>父类</strong>(parent class)或 <strong>超类</strong>(superclass)， 继承父类的类叫 <strong>子类</strong>(subclass)或 <strong>派生类</strong>(derivedclass)。 因此，子类是父类的一个专门用途的版本， 它继承了父类中定义的所有实例变量和方法， 并且增加了独特的元素 。<br>
+        不同类型的对象，相互之间经常有一定数量的共同点。例如，狗和猫，都是动物。同时，每一个对象还定义了额外的特性使得他们与众不同。例如狗会扑咬，猫会抓老鼠。继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或新的功能，也可以用父类的功能，但不能选择性地继承父类。通过使用继承，可以快速地创建新的类，可以提高代码的重用，程序的可维护性，节省大量创建新类的时间 ，提高我们的开发效率。<br>
+#####继承的特点</p>
+<blockquote>
+<ol>
+<li>子类比父类强大,即子类可以拥有自己属性和方法，对父类进行扩展。</li>
+<li>Java只支持单继承，不支持多继承。也就是一个类只能有一个父类，不可以有多个父类。但可以继承多层子类（不建议继承超过3层），或者通过使用接口机制来实现多重继承。</li>
+<li>子类拥有父类对象所有的属性和方法（包括私有属性和私有方法），但是父类中的私有属性和方法子类是无法访问， <strong>只是拥有</strong>。操作父类的成员变量，只能通过父类继承过来的setter和getter方法.</li>
+</ol>
+</blockquote>
+<p>#####继承的优点：</p>
+<blockquote>
+<ul>
+<li>减少代码量，能很好的提高复用率。</li>
+<li>使类与类之间存在继承关系，是实现多态操作的前提。</li>
+</ul>
+</blockquote>
+<p>注意：不要仅仅为了获取某个类的某个功能而去继承这个类，类与类之间要存在所属关系，不能够随意继承。<br>
+#####Super关键字：<br>
+super关键字是一个特殊的变量， 它提供了对父类的方法。 可以用super主动调用父类的构造方法、 访问父类中的成员,访问形式是：</p>
+<blockquote>
+<ul>
+<li>访问父类的属性:super.name</li>
+<li>访问父类的方法:super.eat()</li>
+</ul>
+</blockquote>
+<p>super调用父类的构造方法：</p>
+<pre><code>public class Animal {
+
+    private String name;
+
+    Animal(String name) {
+        this.name = name;
+    }
+
+    public void eat(){
+        System.out.println(&quot;动物正在吃东西&quot;);
+    }
+}
+
+public class Duck extends Animal {
+
+    public Duck(String name){
+        super(name);//主动调用父类的构造方法
+    }
+
+}
+</code></pre>
+<p>#####super的应用：<br>
+（1）执行构造方法创建对象完成对象的初始化时，先执行父类的构造，完成父类的初始化，再执行本类的初始化工作。</p>
+<p>（2）第一次创建Phone（父）类，是直接继承Object,而Object是jdk提供的工具类，自然不会有属性，所以Object类只提供了无参的构造，在执行Phone方法时，无论是无参还是有参都会先执行父类Object的无参构造。</p>
+<p>（3）但是对于Phone的子类Mobile，必须也要有自己的构造方法，由于构造执行的特性，对于无参构造，先执行了Phone的无参构造，对于有参构造，则先执行父类Phone的有参，然后才执行本类属性sex的初始化。</p>
+<p>（4）构造方法constructor中,无论是否显式还是隐式调用super(),子类在创建对象调用时都会执行super();</p>
+<p>（5）显式调用构造是在需要通过父类的带参构造来完成子类的带参构造。例如Mobile类带参构造中显示调用的Super(brand,price,service)</p>
+<p>（6）对于父类私有的属性，即使子类继承，但是在test.java中，子类是无法直接访问的，在制定子类的带参构造方法时，只能通过调用父类的带参构造来完成。对于父类非私有的属性，子类对象可以直接调用。</p>
+<p>（7）this()和super()都指的是对象，所以，均不可以在static环境中使用。包括：static变量,static方法，static语句块。</p>
+<p>（补充说明，虽然没有显示声明父类的无参的构造方法，系统会自动默认生成一个无参构造方法，但是，如果你声明了一个有参的构造方法，而没有声明无参的构造方法，这时系统不会动默认生成一个无参构造方法，此时称为父类有没有无参的构造方法。）</p>
+<p>继承实例：</p>
+<pre><code>//父类Person
+public class Person {   
+    
+    private String name;  //姓名
+    
+    private int age;      //年龄
+    
+    Person(String name) {
+        this.name = name;
+        System.out.println(&quot;调用父类有参构造函数，传入name:&quot;+this.name);
+    }
+    
+    Person() {
+        System.out.println(&quot;调用父类无参构造函数&quot;);
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+//子类Men继承了父类Person，得到了其私有属性和方法
+public class Men  extends Person {
+    
+    private String sex;  //性别
+    
+    private String name;  //还能重新定义一个name
+    
+    Men(String name,String sex) {
+        //父类没有此有参构造函数，隐式调用了父类无参构造函数
+        super.setName(name);
+        this.name = name+name;
+        this.sex = sex;
+        System.out.println(&quot;调用子类有参构造函数，子类name:&quot;+this.name+&quot;,子类sex&quot;+this.sex);
+    }
+}
+
+//测试用例
+public static void main(String args[]) {
+    Men men = new Men(&quot;张三&quot;,&quot;男&quot;);
+    //men.getName() 实际上调用了继承自父类Person的方法，返回的是父类的name属性
+    System.out.println(&quot;name:&quot;+men.getName());  
+}
+</code></pre>
+<p>结果：</p>
+<pre><code>调用父类无参构造函数
+调用子类有参构造函数，子类name:张三张三,子类sex男
+name:张三
+</code></pre>
+<h3 id="三、多态"><a class="header-anchor" href="#三、多态">¶</a>三、多态</h3>
+<p>多态指的是 <strong>对象的多种形态</strong>。具体表现为父类的引用指向子类的实例。<br>
+多态有两种：引用多态和方法多态。<strong>继承是多态的实现基础</strong>。<br>
+#####引用多态</p>
+<blockquote>
+<ul>
+<li>父类的引用可以指向本类的对象；</li>
+<li>父类的引用可以指向子类的对象；</li>
+</ul>
+</blockquote>
+<p>这两句话是什么意思呢，让我们用代码来体验一下，首先我们创建一个父类Animal和一个子类Dog，在主函数里如下所示：</p>
+<pre><code>public static void main(String args[]) {
+    Animal animal1 = new Animal();  //父类的引用指向本类
+    Animal animal2 = new Dog();     //父类的引用指向子类
+}
+</code></pre>
+<p>注意：我们不能使用一个子类的引用来指向父类的对象，如：</p>
+<pre><code>Dog animal3 = new Animal();  //这是不允许的
+</code></pre>
+<p>        这里我们必须深刻理解引用多态的意义，才能更好记忆这种多态的特性。为什么子类的引用不能用来指向父类的对象呢？我在这里通俗给大家讲解一下：就以上面的例子来说，我们能说“狗是一种动物”，但是不能说“动物是一种狗”，狗和动物是父类和子类的继承关系，它们的从属是不能颠倒的。当父类的引用指向子类的对象时，该对象将只是看成一种特殊的父类（里面有重写的方法和属性），反之，一个子类的引用来指向父类的对象是不可行的！！<br>
+#####方法多态<br>
+　根据上述创建的两个对象：本类对象和子类对象，同样都是父类的引用，当我们指向不同的对象时，它们调用的方法也是多态的。</p>
+<blockquote>
+<ul>
+<li>创建本类对象时，调用的方法为本类方法；</li>
+<li>创建子类对象时，调用的方法为子类重写的方法或者继承的方法；</li>
+</ul>
+</blockquote>
+<p>使用多态的时候要注意：<strong>如果我们在子类中编写一个独有的方法（没有继承父类的方法），此时就不能通过父类的引用创建的子类对象来调用该方法！！！</strong></p>
+<p>#####多态的特点:</p>
+<blockquote>
+<ul>
+<li>对象类型和引用类型之间具有继承（类）/实现（接口）的关系；</li>
+<li>引用类型变量发出的方法调用的到底是哪个类中的方法，必须在程序运行期间才能确定；</li>
+<li>多态不能调用“只在子类存在但在父类不存在”的方法；</li>
+<li>如果子类重写了父类的方法，真正执行的是子类覆盖的方法，如果子类没有覆盖父类的方法，执行的是父类的方法。<br>
+#####多态存在的前提（多态的三要素）</li>
+</ul>
+<ol>
+<li>继承：必须有子类和父类，具有继承或实现</li>
+<li>重写：子类必须重写父类的方法</li>
+<li>向上转型：父类的引用变量指向子类的对象</li>
+</ol>
+</blockquote>
+<p>#####引用类型转换　<br>
+父子对象之间的转换分为了向上转型和向下转型,它们区别如下:</p>
+<blockquote>
+<ul>
+<li>向上转型 : 通过子类对象(小范围)实例化父类对象(大范围),这种属于自动转换</li>
+<li>向下转型 : 通过父类对象(大范围)实例化子类对象(小范围),这种属于强制转换</li>
+</ul>
+</blockquote>
+<ol>
+<li><strong>向上类型转换</strong>(隐式/自动类型转换)，是小类型转换到大类型。</li>
+</ol>
+<p>就以上述的父类Animal和一个子类Dog来说明，当父类的引用可以指向子类的对象时，就是向上类型转换。如：</p>
+<pre><code>Dog dog = new Dog();
+Animal animal = dog;  //自动类型提升 向上类型转换
+</code></pre>
+<p>2. <strong>向下类型转换</strong>(强制类型转换)，是大类型转换到小类型(有风险,可能出现数据溢出)。</p>
+<p>将上述代码再加上一行，我们再次将父类转换为子类引用，那么会出现错误，编译器不允许我们直接这么做，虽然我们知道这个父类引用指向的就是子类对象，但是编译器认为这种转换是存在风险的。如：</p>
+<pre><code>Dog dog = new Dog();
+Animal animal = dog;  //自动类型提升 向上类型转换
+Dog dog2 = animal;   //报错
+</code></pre>
+<p>那么我们该怎么解决这个问题呢，我们可以在animal前加上（Dog）来强制类型转换。如：</p>
+<pre><code>Dog dog = new Dog();
+Animal animal = dog;  //自动类型提升 向上类型转换
+Dog dog2 = (Dog) animal; //向下类型转换 强制类型转换
+</code></pre>
+<p>但是如果 <strong>父类引用没有指向该子类的对象，则不能向下类型转换</strong>，虽然编译器不会报错，但是运行的时候程序会出错，如：</p>
+<pre><code>Dog dog2 = (Dog) new Animal(); 
+</code></pre>
+<p>其实这就是上面所说的子类的引用指向父类的对象，而强制转换类型也不能转换！！</p>
+<p>还有一种情况是父类的引用指向其他子类的对象，则不能通过强制转为该子类的对象。如：</p>
+<pre><code>Dog dog = new Dog();
+Animal animal = dog;  //自动类型提升 向上类型转换
+Dog dog2 = (Dog) animal;
+Cat cat = (Cat) animal;  //1.编译时 Cat类型  2.运行时 Dog类型
+</code></pre>
+<p>这是因为我们在编译的时候进行了强制类型转换，编译时的类型是我们强制转换的类型，所以编译器不会报错，而当我们运行的时候，程序给animal开辟的是Dog类型的内存空间，这与Cat类型内存空间不匹配，所以无法正常转换。这两种情况出错的本质是一样的，所以我们在使用强制类型转换的时候要特别注意这两种错误！！下面有个更安全的方式来实现向下类型转换。。。。</p>
+<p>#####instanceof运算符<br>
+         <strong>instanceof</strong> 是Java的一个二元操作符，和==，&gt;，&lt;是同一类东东。是Java的保留关键字。<strong>它的作用是测试它左边的对象是否是它右边的类的实例，返回boolean类型的数据</strong>。</p>
+<p>我们来使用instanceof运算符来规避上面的错误，代码修改如下：</p>
+<pre><code>if(animal instanceof Cat) {
+    Cat cat = (Cat) animal;  
+}
+</code></pre>
+<p>利用if语句和instanceof运算符来判断两个对象的类型是否一致。</p>
+<p>补充说明：在比较一个对象是否和另一个对象属于同一个类实例的时候，我们通常可以采用 <strong>instanceof</strong> 和 <strong>getClass</strong> 两种方法通过两者是否相等来判断，但是两者在判断上面是有差别的。Instanceof进行类型检查规则是: <strong>你属于该类吗？或者你属于该类的派生类吗？</strong> 而通过getClass获得类型信息采用==来进行检查是否相等的操作是 <strong>严格的判断,不会存在继承方面的考虑</strong>。</p>
+<p>#####重写与重载<br>
+方法的 <strong>重写</strong> (Overriding)和 <strong>重载</strong> (Overloading)是Java多态性的不同表现。<strong>重写</strong> (Overriding)是指子类重定义了父类中同名的方法。 重写表现为父子与子类之间方法的多态性。<strong>重载</strong> (Overloading)是指在同一个类中的多个方法可以同名但参数列表必须不同。 重载表现为同一个类中方法的多态性。</p>
+<p>重写遵循以下规则：</p>
+<blockquote>
+<ul>
+<li>参数列表必须完全和被重写方法的参数列表一致。</li>
+<li>返回类型必须完全和被重写方法的返回类型一致。</li>
+<li>访问修饰符的限制一定要大于被重写方法的访问修饰符（public&gt;protected&gt;default&gt;private）。</li>
+<li>子类方法声明抛出的异常类应比父类方法声明抛出的异常类更小或相等。</li>
+</ul>
+</blockquote>
+<p>重载的注意事项：</p>
+<blockquote>
+<ul>
+<li>在使用重载时只能通过相同的方法名、不同的参数形式实现。不同的参数类型可以是不同的参数类型，不同的参数个数，不同的参数顺序（参数类型必须不一样）。</li>
+<li>各个重载方法的参数列表必须不同。</li>
+<li>各个重载方法的返回值类型可以相同也可以不同，但是仅仅返回值类型不同的不是重载。</li>
+<li>不能通过仅仅通过访问权限、返回类型、抛出的异常的不同而进行重载</li>
+</ul>
+</blockquote>
+<p>多态实例：</p>
+<pre><code>//父类Animal
+public class Animal {
+    public void voice(){
+        System.out.println(&quot;动物发出声音&quot;);
+    }
+}
+
+//子类Cat继承Animal
+public class Cat extends Animal{
+    //重写voice方法
+    public void voice() {
+        System.out.println(&quot;猫发出声音，喵喵喵&quot;);
+    }
+}
+
+ //子类Dog继承Animal
+public class Dog extends Animal{
+     //重写voice方法
+    public void voice() {
+        System.out.println(&quot;狗发出声音，汪汪汪&quot;);
+    }
+}
+
+//测试代码
+public static void main(String[] args) throws Exception {
+    Animal animal = new Dog();  //Dog对象向上转型为animal
+    //得到的是Dog类重写的voice方法
+    animal.voice();     //狗发出声音，汪汪汪
+}
+</code></pre>
+<p>不同子类对象向上转型的多态实例：</p>
+<pre><code>//传入Animal类，内部执行voice()方法。
+public static void ShowVoice(Animal animal){
+    animal.voice();
+}
+
+ //测试代码
+public static void main(String[] args) throws Exception {
+    //用两个不同的子类对象向上转型为Animal类，再执行同一方法
+    //得到的是两个不同子类对象自己重写的方法
+    Animal dog = new Dog();
+    ShowVoice(dog);
+    Animal cat = new Cat();
+    ShowVoice(cat);
+}
+</code></pre>
+<p>执行结果：</p>
+<pre><code>狗发出声音，汪汪汪
+猫发出声音，喵喵喵
+</code></pre>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
+        			<a href="/categories/Java//" class="article-tag-list-link color5">Java</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/08/05/%E5%8D%81%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">十大排序算法学习记录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -231,8 +619,8 @@
 	var yiliaConfig = {
 		mathjax: [object Object],
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
